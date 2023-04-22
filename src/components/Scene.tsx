@@ -18,11 +18,6 @@ import House from './House';
 
 export interface ExampleProps {}
 
-export const config = {
-  runtime: 'experimental-edge',
-}
-
-
 const Scene = ({}: ExampleProps) => {
   return (
     <div
