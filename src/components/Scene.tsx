@@ -8,7 +8,7 @@ import {
   Vignette,
 } from '@react-three/postprocessing';
 import { GlitchMode, KernelSize, Resizer } from 'postprocessing';
-import React, { Suspense } from 'react';
+import React from 'react';
 import { PCFSoftShadowMap } from 'three';
 
 import Base from './Base';
