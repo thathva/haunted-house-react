@@ -46,11 +46,9 @@ const Scene = ({}: ExampleProps) => {
         {/* <Sky sunPosition={[7, 5, 1]} /> */}
         {/* <Terrain /> */}
         <Ghosts />
-        <Suspense fallback={null}>
           <Base />
           <House />
           <Graves />
-        </Suspense>
         <OrbitControls makeDefault maxPolarAngle={Math.PI / 2.3} />
         <EffectComposer>
           <DepthOfField
