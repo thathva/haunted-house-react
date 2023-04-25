@@ -23,6 +23,18 @@ module.exports = withTM(
       // your project has type errors.
       // !! WARN !!
       ignoreBuildErrors: true,
+      generateEtags: false,
+      headers: () => [
+        {
+          source: '/*',
+          headers: [
+            {
+              key: 'Cache-Control',
+              value: 'no-store',
+            },
+          ],
+        },
+      ],
     },
   })
 );
